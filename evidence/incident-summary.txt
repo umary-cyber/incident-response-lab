@@ -1,0 +1,8 @@
+Incident Response Summary
+
+1. Preparation: System baseline collected
+2. Detection: suspicious.sh process detected (PID 6612)
+3. Containment: Process terminated
+4. Eradication: suspicious.sh removed
+5. Recovery: System health verified
+6. Lessons Learned: Process monitoring and evidence collection are important

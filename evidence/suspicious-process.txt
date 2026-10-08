@@ -1,0 +1,2 @@
+umar        6612  0.0  0.0   7228  3676 pts/0    SN   13:26   0:00 /bin/bash /home/umar/incident-response-lab/suspicious.sh
+umar        7098  0.0  0.0   6568  2444 pts/0    S+   13:27   0:00 grep --color=auto suspicious.sh
