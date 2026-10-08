@@ -1,76 +1,102 @@
-# Incident Response Lab 🛡️
+# 🛡️ Incident Response Lab
 
-A hands-on Linux Incident Response Lab demonstrating the **NIST Incident Response Lifecycle** in a controlled Kali Linux environment.
+> A hands-on cybersecurity lab demonstrating the **NIST Incident Response Lifecycle** through a controlled Linux security incident simulation.
 
-## 🎯 Project Objective
+---
 
-The purpose of this lab is to simulate a small security incident and practice the core Incident Response phases:
+## 🎯 Project Overview
 
-**Preparation → Detection → Containment → Eradication → Recovery → Lessons Learned**
+This project simulates a security incident in a controlled **Kali Linux** environment and demonstrates how a SOC analyst can identify, investigate, contain, eradicate, and document suspicious activity.
 
-## 🧪 Lab Environment
+### Incident Response Lifecycle
 
-- **OS:** Kali Linux
-- **Shell:** Bash
-- **Tools:** Linux process and network utilities
-- **Git:** Version control
-- **Environment:** Controlled local lab
+```text
+Preparation → Detection → Containment → Eradication → Recovery → Lessons Learned
+🧪 Lab Environment
+Component	Details
+💻 Operating System	Kali Linux
+🐚 Shell	Bash
+🔎 Investigation	Linux CLI Utilities
+📊 Evidence	Investigation Artifacts
+🔧 Version Control	Git / GitHub
+🛡️ Incident Type	Simulated Suspicious Process
+🚨 Incident Scenario
 
-## 🔍 Incident Simulation
+A harmless Bash script was intentionally created to simulate a suspicious running process.
 
-A harmless Bash script was used to simulate a suspicious process.
+The objective was to practice the complete Incident Response workflow without using real malware or performing destructive actions.
 
-The simulated incident was:
+🔍 Investigation & Response
+1️⃣ Preparation
+Collected system information
+Identified logged-in users
+Recorded running processes
+Reviewed listening network ports
+2️⃣ Detection
+Investigated running processes
+Identified the simulated suspicious process
+Preserved detection evidence
+3️⃣ Containment
+Identified the suspicious process PID
+Terminated the suspicious process
+4️⃣ Eradication
+Removed the suspicious script
+Verified that the artifact no longer existed
+5️⃣ Recovery
+Checked system health
+Reviewed system load after remediation
+6️⃣ Lessons Learned
+Documented the incident
+Preserved investigation evidence
+Reviewed the importance of process monitoring and evidence collection
+📁 Project Structure
+incident-response-lab/
+│
+├── evidence/
+│   ├── system-info.txt
+│   ├── users.txt
+│   ├── processes.txt
+│   ├── network.txt
+│   ├── suspicious-process.txt
+│   └── incident-summary.txt
+│
+└── README.md
+📊 Evidence Collected
+Evidence	Purpose
+system-info.txt	System baseline information
+users.txt	Logged-in user investigation
+processes.txt	Running process baseline
+network.txt	Listening network ports
+suspicious-process.txt	Suspicious process detection evidence
+incident-summary.txt	Incident response summary
+🛠️ Skills Demonstrated
+🔎 Linux Process Investigation
+🌐 Network Investigation
+🚨 Incident Detection
+🛑 Threat Containment
+🧹 Threat Eradication
+🔄 System Recovery
+📂 Evidence Collection
+📝 Incident Documentation
+🐧 Linux Command Line
+🔧 Git & GitHub
+🛡️ NIST Incident Response Methodology
+🔐 Safety
 
-1. System baseline information was collected.
-2. Running users and processes were investigated.
-3. Network listening ports were reviewed.
-4. A simulated suspicious process was detected.
-5. The process was contained and terminated.
-6. The suspicious artifact was removed.
-7. System health was verified.
-8. Lessons learned were documented.
+This project was performed in a controlled local lab environment.
 
-## 📋 NIST Incident Response Lifecycle
+The simulated incident used a harmless Bash script.
 
-| Phase | Action |
-|---|---|
-| Preparation | Collected system, user, process and network baseline |
-| Detection | Identified the simulated suspicious process |
-| Containment | Terminated the suspicious process |
-| Eradication | Removed the suspicious script |
-| Recovery | Verified system health and load |
-| Lessons Learned | Documented the incident and response |
+No real malware, credential theft, destructive commands, or unauthorized systems were involved.
 
-## 📁 Evidence
+📚 Key Learning Outcome
 
-The `evidence/` directory contains investigation artifacts:
+This lab provided practical experience with the Incident Response lifecycle and demonstrated how a security analyst can move from initial detection to containment, eradication, recovery, and post-incident documentation.
 
-- `system-info.txt` — System information
-- `users.txt` — Logged-in user information
-- `processes.txt` — Process baseline
-- `network.txt` — Listening network ports
-- `suspicious-process.txt` — Detection evidence
-- `incident-summary.txt` — Incident response summary
+Detect → Investigate → Contain → Eradicate → Recover → Learn
 
-## 🛡️ Safety
+👨‍💻 Author
 
-This project uses a **harmless simulated incident** for educational purposes.
+Muhammad Umar
 
-No real malware, credential theft, destructive activity, or unauthorized systems were used.
-
-## 🚀 Skills Demonstrated
-
-- Linux command-line investigation
-- Process analysis
-- Network investigation
-- Incident detection
-- Containment and eradication
-- Evidence collection
-- Incident documentation
-- Git/GitHub
-- NIST Incident Response methodology
-
-## 📌 Learning Outcome
-
-This lab provided practical experience with the Incident Response lifecycle and demonstrated how a SOC analyst can investigate, contain, eradicate, and document a simulated security incident.
+Cybersecurity Student | SOC & Blue Team Enthusiast
